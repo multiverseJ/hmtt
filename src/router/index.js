@@ -12,19 +12,19 @@ const routes = [{
   component: Layout,
   redirect: '/home',
   children: [{
-    path: '/home',
+    path: 'home',
     component: () => import('@/views/Home')
   },
   {
-    path: '/video',
+    path: 'video',
     component: () => import('@/views/Video')
   },
   {
-    path: '/question',
+    path: 'question',
     component: () => import('@/views/Question')
   },
   {
-    path: '/my',
+    path: 'my',
     component: () => import('@/views/My')
   }]
 }

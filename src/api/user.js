@@ -1,4 +1,5 @@
 import request from '@/utils/request'
+import store from '@/store'
 /**
  *
  * @param {number} mobile
@@ -21,6 +22,15 @@ export const login = ({ mobile, code }) => {
     data: {
       mobile,
       code
+    }
+  })
+}
+
+export const getUserInfo = () => {
+  return request({
+    url: 'user',
+    headers: {
+      Authorization: 'Bearer ' + store.state.user.token
     }
   })
 }
