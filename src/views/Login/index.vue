@@ -56,7 +56,7 @@ export default {
   created () { },
   data () {
     return {
-      mobile: '13911111111', // 手机号
+      mobile: '13911891111', // 手机号
       code: '246810', // 短信验证码
       time: 5 * 1000,
       isCountDownShow: false

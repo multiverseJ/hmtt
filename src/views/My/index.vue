@@ -10,25 +10,25 @@
             round
             :src="userInfo.photo"
           />
-          <span>{{userInfo.name}}</span>
+          <span>{{ userInfo.name }}</span>
         </div>
         <div class="button">编辑资料</div>
       </div>
       <ul class="list">
         <li>
-          <p>{{userInfo.art_count}}</p>
+          <p>{{ userInfo.art_count }}</p>
           <p>头条</p>
         </li>
         <li>
           <p>8</p>
-          <p>{{userInfo.follow_count}}</p>
+          <p>{{ userInfo.follow_count }}</p>
         </li>
         <li>
-          <p>{{userInfo.fans_count}}</p>
+          <p>{{ userInfo.fans_count }}</p>
           <p>粉丝</p>
         </li>
         <li>
-          <p>{{userInfo.like_count}}</p>
+          <p>{{ userInfo.like_count }}</p>
           <p>获赞</p>
         </li>
       </ul>
@@ -73,6 +73,7 @@
 import { mapState } from 'vuex'
 import { getUserInfo } from '@/api/user'
 export default {
+  name: 'My',
   async created () {
     if (this.user && this.user.token) {
       try {
@@ -112,7 +113,7 @@ export default {
 .header {
   width: 750px;
   height: 401px;
-  background: rgb(50, 150, 250, 0.8) url("@/assets/banner.png") no-repeat;
+  background: rgba(50, 150, 250, 0.8) url("@/assets/banner.png") no-repeat;
   background-size: cover;
 }
 .header-notlogin {
