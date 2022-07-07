@@ -31,6 +31,12 @@ const routes = [{
 {
   path: '/search',
   component: () => import('@/views/Search')
+},
+{
+  path: '/article/:article_id',
+  component: () => import('@/views/Article'),
+  name: 'article',
+  props: true
 }
 ]
 

@@ -9,6 +9,8 @@ import 'amfe-flexible'
 import '@/styles/index.less'
 import MyIcon from '@/components/MyIcon.vue'
 import * as obj from '@/filters'
+import FollowUser from '@/components/FollowUser.vue'
+import '@/components'
 // console.log(obj)
 Object.keys(obj).forEach(key => {
   Vue.filter(key, obj[key])
@@ -16,6 +18,8 @@ Object.keys(obj).forEach(key => {
 Vue.use(Vant)
 Vue.config.productionTip = false
 Vue.component('MyIcon', MyIcon)
+Vue.component(FollowUser.name, FollowUser)
+Vue.component(FollowUser.name, FollowUser)
 new Vue({
   router,
   store,

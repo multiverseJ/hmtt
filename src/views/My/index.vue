@@ -20,8 +20,8 @@
           <p>头条</p>
         </li>
         <li>
-          <p>8</p>
           <p>{{ userInfo.follow_count }}</p>
+          <p>关注</p>
         </li>
         <li>
           <p>{{ userInfo.fans_count }}</p>
